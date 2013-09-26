@@ -41,6 +41,11 @@ body {
   padding-right: 15px;
 }
 
+#map-canvas {
+	width: 100%;
+	height: 300px;
+}
+
 code {
   font-size: 80%;
 }
