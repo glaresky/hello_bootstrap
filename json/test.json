@@ -1,0 +1,15 @@
+      {
+      	"success" : "YES",
+      	"data" : [
+      		{"category": "ashtray", "nm": "현빌딩 흡연장소", "latitude": 37.4881848, "longitude": 126.99825829999997},
+      		{"category": "ashtray", "nm": "유노피스 흡연장소", "latitude": 37.4883943, "longitude": 126.9980961},
+	      	{"category": "cafe", "nm": "까페자스 방배점", "latitude": 37.4883712, "longitude": 126.99686159999999},
+	      	{"category": "cafe", "nm": "까페배네 내방역점", "latitude": 37.48772, "longitude": 126.99477160000004},
+	      	{"category": "cafe", "nm": "탐앤탐스 내방역점", "latitude": 37.4883625, "longitude": 126.99371470000006},
+                  {"category": "cafe", "nm": "커핀그루나루 내방역점", "latitude": 37.4877826, "longitude": 126.9930147}
+                  
+      	]
+      }
+
+
+

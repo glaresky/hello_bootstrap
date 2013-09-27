@@ -19,6 +19,9 @@
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0Vj27W1TAYNHoXsLIh7yNLbkdFfJOdDI&sensor=false">
     </script>
+
+
+
   </head>
   <body>
   	<div id="wrap"><!-- div wrap start -->
@@ -65,6 +68,12 @@
 
         <div class="row">
 	        <div class="col-lg-6">
+            radius : <select id="radius" >
+              <option value="1" selected="selected">1Km</option>
+              <option value="5">5Km</option>
+            </select>
+            latitude : <input type="text" id="latitude" value="40.4167754"/>
+            longitude: <input type="text" id="longitude" value="-3.7037901999999576"/>
 	          <div id="map-canvas"></div>
 	        </div>
 	        <div class="col-lg-6">

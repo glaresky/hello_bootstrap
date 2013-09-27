@@ -8,6 +8,7 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var json = __dirname + "/json";
 
 var app = express();
 
@@ -35,6 +36,9 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/main', function(req, res) {
 	res.render('main.html');
+});
+app.get('/test.json', function(req, res) {
+	res.sendfile(json + '/test.json');
 });
 
 http.createServer(app).listen(app.get('port'), function(){
