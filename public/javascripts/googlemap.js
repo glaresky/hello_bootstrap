@@ -48,15 +48,13 @@ function initialize() {
         var marker = createMarker(point, html, icon);
 
         //markerArray.push(mapLatLng(data.data[i].latitude, data.data[i].longitude));
-
-       	console.log(i);
     	}
    	},
    	error : function(xhr, status, error) {
     	alert("error!");
    	},
    	complete: function() {
-   		console.log("complete");
+   		//console.log("complete");
    	}
 	});
 }
@@ -75,10 +73,7 @@ function searchLocation(query) {
 }
 
 function callbackMarker(results, status) {
-	console.log("callbackMarker");
 	var radius = parseInt($("#radius").val()*1000);
-
-	console.log(radius);
 
 	if (status == google.maps.places.PlacesServiceStatus.OK) {
 		// for (var i=0 ; i< results.length ; i++) {
