@@ -17,12 +17,10 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0Vj27W1TAYNHoXsLIh7yNLbkdFfJOdDI&sensor=false">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0Vj27W1TAYNHoXsLIh7yNLbkdFfJOdDI&libraries=places&sensor=false">
     </script>
-
-
-
   </head>
+
   <body>
   	<div id="wrap"><!-- div wrap start -->
 
@@ -68,18 +66,12 @@
 
         <div class="row">
 	        <div class="col-lg-6">
-            radius : <select id="radius" >
-              <option value="1" selected="selected">1Km</option>
-              <option value="5">5Km</option>
-            </select>
-            latitude : <input type="text" id="latitude" value="40.4167754"/>
-            longitude: <input type="text" id="longitude" value="-3.7037901999999576"/>
 	          <div id="map-canvas"></div>
 	        </div>
 	        <div class="col-lg-6">
 	          <h2>Select Location</h2>
-	          <p><input type="text" class="form-control" placeholder="location..."></p>
-	          <p><a class="btn btn-primary" href="#">Click &raquo;</a></p>
+	          <p><input type="text" class="form-control" placeholder="location..." name="search_nm"></p>
+	          <p><a class="btn btn-primary" href="#" id="search_btn">Click &raquo;</a></p>
 	        </div>
 	      </div>
   		</div><!-- page content end -->
