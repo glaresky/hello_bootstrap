@@ -1,17 +1,13 @@
-var defaultLatLng;
-var map;
 var service;
-var infowindow;
-var mapCircle;
-
+var latlng;
 var gmarkers = []; 
 var map = null;
 var circle = null;
-var geocoder = new google.maps.Geocoder();
-var latlng;
+var infowindow = new google.maps.InfoWindow({ 
+  size: new google.maps.Size(150,50)
+});
 
 function initialize() {
-	geocoder = new google.maps.Geocoder();
 	latlng = new google.maps.LatLng(37.4881848,126.99825829999997);
 	var mapOptions = {
 		zoom: 15,
@@ -146,10 +142,6 @@ function createMarker(latlng, html, icon) {
     gmarkers.push(marker);
     // add a line to the side_bar html
 }
-
-var infowindow = new google.maps.InfoWindow({ 
-  size: new google.maps.Size(150,50)
-});
 
 $(document).ready(function() {
 	$('#search_btn').click(function(e) {
